@@ -40,6 +40,11 @@
             android:exported="false" />
 
 
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+
+
         <!-- Main Activity (Next Screen) -->
         <activity
             android:name=".MainActivity"

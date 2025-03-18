@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DefendX"
+        tools:targetApi="31">
+
+        <!-- Launch Activity (New Entry Point) -->
+        <activity
+            android:name=".LaunchActivity"
+            android:exported="true"
+           > <!-- Optional: Fullscreen -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- Onboarding1 -->
+        <activity
+            android:name=".OnboardingActivityOne"
+            android:exported="false" />
+
+        <!-- Onboarding2 -->
+        <activity
+            android:name=".OnboardingActivityTwo"
+            android:exported="false" />
+
+
+        <!-- Main Activity (Next Screen) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" /> <!-- No intent-filter here, it’s not the entry point anymore -->
+
+    </application>
+
+</manifest>

@@ -35,6 +35,10 @@
             android:name=".OnboardingActivityTwo"
             android:exported="false" />
 
+        <activity
+            android:name=".OnboardingActivityThree"
+            android:exported="false" />
+
 
         <!-- Main Activity (Next Screen) -->
         <activity

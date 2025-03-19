@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">DefendX</string>
+
+    <string name="sign_in_text">
+        Don\'t have an account? <font color="#FF0000">SIGN IN</font>
+    </string>
+
 </resources>

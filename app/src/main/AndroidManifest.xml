@@ -51,7 +51,8 @@
             android:name=".Login"
             android:exported="false" />
 
-
+        <activity android:name=".Home"
+                    android:exported="false" />
 
         <!-- Main Activity (Next Screen) -->
         <activity

@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
+import android.widget.TextView
 
 class Login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,6 +17,8 @@ class Login : AppCompatActivity() {
             val intent = Intent(this, Home::class.java)
             startActivity(intent)
             finish()
+
+
         }
     }
 }

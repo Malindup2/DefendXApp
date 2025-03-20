@@ -5,27 +5,27 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class Home : AppCompatActivity() {
+class Product : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        setContentView(R.layout.activity_product)
 
         // Reference the BottomNavigationView
-        val bottomNavigationView = findViewById<com.google.android.material.bottomnavigation.BottomNavigationView>(R.id.bottomNavigationView)
-        val buyButton1 = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.buyButton1)
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+
         // Set the selected item to "Home"
         bottomNavigationView.selectedItemId = R.id.nav_home
-
-        buyButton1.setOnClickListener {
-            val intent = Intent(this, Product::class.java)
-            startActivity(intent)
-        }
-
-
 
         // Set up navigation listener
         bottomNavigationView.setOnItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
+                R.id.nav_home -> {
+                    // Navigate to Home activity
+                    val intent = Intent(this, Home::class.java)
+                    startActivity(intent)
+                    finish()
+                    true
+                }
                 R.id.nav_wishlist -> {
                     // Navigate to Wishlist activity
                     val intent = Intent(this, Wishlist::class.java)
@@ -33,9 +33,15 @@ class Home : AppCompatActivity() {
                     finish()
                     true
                 }
-
                 R.id.buyButton1 -> {
-                    // Navigate to Wishlist activity
+                    // Navigate to Orders activity
+                    val intent = Intent(this, Product::class.java)
+                    startActivity(intent)
+                    finish()
+                    true
+                }
+                R.id.nav_profile -> {
+                    // Navigate to Profile activity
                     val intent = Intent(this, Product::class.java)
                     startActivity(intent)
                     finish()

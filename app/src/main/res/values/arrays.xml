@@ -1,0 +1,13 @@
+<resources>
+    <!-- String resource for the Spinner prompt -->
+    <string name="select_size_prompt">Select a size</string>
+
+    <!-- Array resource for sizes -->
+    <string-array name="sizes_array">
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+        <item>XL</item>
+        <item>XXL</item>
+    </string-array>
+</resources>

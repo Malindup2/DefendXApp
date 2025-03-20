@@ -70,7 +70,7 @@
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
                 android:scaleType="centerCrop"
-                app:srcCompat="@drawable/banner" />
+                app:srcCompat="@drawable/wishbanner" />
 
             <!-- Categories Title -->
             <TextView
@@ -79,10 +79,10 @@
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
                 android:layout_marginTop="10dp"
-                android:textStyle="bold"
                 android:gravity="center"
-                android:text="Categories"
+                android:textStyle="bold"
                 android:background="@drawable/graybtn"
+                android:text="Wish List"
                 android:textColor="@color/black" />
 
             <!-- Categories GridLayout -->
@@ -219,15 +219,15 @@
 
             <!-- Trending Title -->
             <TextView
-                android:id="@+id/Trending"
+                android:id="@+id/restocked"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
                 android:layout_marginTop="10dp"
                 android:textStyle="bold"
                 android:gravity="center"
-                android:text="Trending"
-                android:textColor="@color/black" />
+                android:background="@drawable/graybtn"
+                android:text="Restocked"/>
 
             <!-- Trending Items GridLayout -->
             <androidx.gridlayout.widget.GridLayout
@@ -252,15 +252,15 @@
                     app:layout_rowWeight="1">
 
                     <ImageView
-                        android:id="@+id/imageView6"
-                        android:layout_width="160dp"
+                        android:id="@+id/imageView09"
+                        android:layout_width="120dp"
                         android:layout_height="120dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/pic2"
                         android:contentDescription="Item Image" />
 
                     <TextView
-                        android:id="@+id/textView8"
+                        android:id="@+id/textView96"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Oversized T"
@@ -270,7 +270,7 @@
                         android:layout_marginTop="8dp" />
 
                     <TextView
-                        android:id="@+id/textView9"
+                        android:id="@+id/textView543"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
@@ -279,7 +279,7 @@
                         android:textSize="14sp" />
 
                     <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/buyButton1"
+                        android:id="@+id/buyButton9"
                         android:layout_width="80dp"
                         android:layout_height="40dp"
                         android:layout_marginTop="6dp"
@@ -308,15 +308,15 @@
                     app:layout_rowWeight="1">
 
                     <ImageView
-                        android:id="@+id/imageView77"
-                        android:layout_width="160dp"
+                        android:id="@+id/imageView47"
+                        android:layout_width="120dp"
                         android:layout_height="120dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/pic5"
                         android:contentDescription="Item Image" />
 
                     <TextView
-                        android:id="@+id/textView150"
+                        android:id="@+id/textView130"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -326,7 +326,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/textView1571"
+                        android:id="@+id/textView115"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
@@ -335,7 +335,7 @@
                         android:textSize="14sp" />
 
                     <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/buyButton2"
+                        android:id="@+id/buyButton10"
                         android:layout_width="80dp"
                         android:layout_height="40dp"
                         android:layout_marginTop="6dp"
@@ -378,15 +378,15 @@
                     app:layout_rowWeight="1">
 
                     <ImageView
-                        android:id="@+id/imageView675"
-                        android:layout_width="160dp"
+                        android:id="@+id/imageView645"
+                        android:layout_width="120dp"
                         android:layout_height="120dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/pic6"
                         android:contentDescription="Item Image" />
 
                     <TextView
-                        android:id="@+id/textView758"
+                        android:id="@+id/textView8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Ladies Pant"
@@ -396,7 +396,7 @@
                         android:layout_marginTop="8dp" />
 
                     <TextView
-                        android:id="@+id/textView975"
+                        android:id="@+id/textView91"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
@@ -405,7 +405,7 @@
                         android:textSize="14sp" />
 
                     <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/buyButton3"
+                        android:id="@+id/buyButton11"
                         android:layout_width="80dp"
                         android:layout_height="40dp"
                         android:layout_marginTop="6dp"
@@ -434,15 +434,15 @@
                     app:layout_rowWeight="1">
 
                     <ImageView
-                        android:id="@+id/imageView7"
-                        android:layout_width="160dp"
+                        android:id="@+id/imageView27"
+                        android:layout_width="120dp"
                         android:layout_height="120dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/pic3"
                         android:contentDescription="Item Image" />
 
                     <TextView
-                        android:id="@+id/textView10"
+                        android:id="@+id/textView120"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -452,7 +452,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/textView11"
+                        android:id="@+id/textView311"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
@@ -461,7 +461,7 @@
                         android:textSize="14sp" />
 
                     <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/buyButton4"
+                        android:id="@+id/buyButton12"
                         android:layout_width="80dp"
                         android:layout_height="40dp"
                         android:layout_marginTop="6dp"
@@ -485,6 +485,7 @@
                 android:layout_marginTop="10dp"
                 android:textStyle="bold"
                 android:gravity="center"
+                android:background="@drawable/graybtn"
                 android:text="Latest"
                 android:textColor="@color/black" />
 
@@ -511,15 +512,15 @@
                     app:layout_rowWeight="1">
 
                     <ImageView
-                        android:id="@+id/imageView643"
-                        android:layout_width="160dp"
+                        android:id="@+id/imageView26"
+                        android:layout_width="120dp"
                         android:layout_height="120dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/pic6"
                         android:contentDescription="Item Image" />
 
                     <TextView
-                        android:id="@+id/textView843"
+                        android:id="@+id/textView83"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Ladies Pant"
@@ -529,7 +530,7 @@
                         android:layout_marginTop="8dp" />
 
                     <TextView
-                        android:id="@+id/textView9"
+                        android:id="@+id/textView911"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
@@ -538,7 +539,7 @@
                         android:textSize="14sp" />
 
                     <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/buyButton5"
+                        android:id="@+id/buyButton13"
                         android:layout_width="80dp"
                         android:layout_height="40dp"
                         android:layout_marginTop="6dp"
@@ -567,15 +568,15 @@
                     app:layout_rowWeight="1">
 
                     <ImageView
-                        android:id="@+id/imageView7"
-                        android:layout_width="160dp"
+                        android:id="@+id/imageView74"
+                        android:layout_width="120dp"
                         android:layout_height="120dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/pic7"
                         android:contentDescription="Item Image" />
 
                     <TextView
-                        android:id="@+id/textView10"
+                        android:id="@+id/textView108"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -585,7 +586,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/textView11"
+                        android:id="@+id/textView112"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
@@ -594,7 +595,7 @@
                         android:textSize="14sp" />
 
                     <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/buyButton6"
+                        android:id="@+id/buyButton14"
                         android:layout_width="80dp"
                         android:layout_height="40dp"
                         android:layout_marginTop="6dp"
@@ -637,14 +638,14 @@
 
                     <ImageView
                         android:id="@+id/imageView6"
-                        android:layout_width="160dp"
+                        android:layout_width="120dp"
                         android:layout_height="120dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/pic9"
                         android:contentDescription="Item Image" />
 
                     <TextView
-                        android:id="@+id/textView8"
+                        android:id="@+id/textView86"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Unisex tee"
@@ -663,7 +664,7 @@
                         android:textSize="14sp" />
 
                     <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/buyButton7"
+                        android:id="@+id/buyButton15"
                         android:layout_width="80dp"
                         android:layout_height="40dp"
                         android:layout_marginTop="6dp"
@@ -693,7 +694,7 @@
 
                     <ImageView
                         android:id="@+id/imageView7"
-                        android:layout_width="160dp"
+                        android:layout_width="120dp"
                         android:layout_height="120dp"
                         android:scaleType="centerCrop"
                         android:src="@drawable/pic8"
@@ -719,7 +720,7 @@
                         android:textSize="14sp" />
 
                     <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/buyButton8"
+                        android:id="@+id/buyButton16"
                         android:layout_width="80dp"
                         android:layout_height="40dp"
                         android:layout_marginTop="6dp"

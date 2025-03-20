@@ -53,6 +53,7 @@
         <activity android:name=".Wishlist"
                     android:exported="false" />
 
+        <activity android:name=".Product" />
 
         <!-- Main Activity (Next Screen) -->
         <activity

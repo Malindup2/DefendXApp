@@ -39,13 +39,9 @@
             android:name=".OnboardingActivityThree"
             android:exported="false" />
 
-
-
         <activity
             android:name=".Register"
             android:exported="false" />
-
-
 
         <activity
             android:name=".Login"
@@ -53,6 +49,10 @@
 
         <activity android:name=".Home"
                     android:exported="false" />
+
+        <activity android:name=".Wishlist"
+                    android:exported="false" />
+
 
         <!-- Main Activity (Next Screen) -->
         <activity

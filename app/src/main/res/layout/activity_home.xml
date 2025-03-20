@@ -53,7 +53,8 @@
     <!-- ScrollView for Banner, Categories, and Trending Items -->
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -739,6 +740,6 @@
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?android:attr/windowBackground"
-        app:menu="@android:menu" />
+        android:background="@drawable/blackbtn"
+        app:menu="@menu/bottom_navigation_bar" />
 </LinearLayout>

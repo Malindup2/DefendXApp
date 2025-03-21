@@ -11,49 +11,13 @@ class Checkout : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(layout.activity_checkout)
 
-        // Reference the BottomNavigationView
-        val bottomNavigationView = findViewById<BottomNavigationView>(id.bottomNavigationView)
-
-        // Set the selected item to "Orders"
-        bottomNavigationView.selectedItemId = id.nav_orders
-
-
         // Reference the Buy Button
-        val finality  = findViewById<androidx.appcompat.widget.AppCompatButton>(id.BuyButton)
+        val finality  = findViewById<androidx.appcompat.widget.AppCompatButton>(id.PayBtnLast)
         finality.setOnClickListener {
-            val intent = Intent(this, Checkout::class.java)
+            val intent = Intent(this, Payment::class.java)
             startActivity(intent)
         }
 
-        // Set up navigation listener
-        bottomNavigationView.setOnItemSelectedListener { menuItem ->
-            when (menuItem.itemId) {
-                id.nav_home -> {
-                    val intent = Intent(this, Home::class.java)
-                    startActivity(intent)
-                    finish()
-                    true
-                }
-                id.nav_wishlist -> {
-                    val intent = Intent(this, Wishlist::class.java)
-                    startActivity(intent)
-                    finish()
-                    true
-                }
-                id.nav_orders -> {
-                    val intent = Intent(this, Checkout::class.java)
-                    startActivity(intent)
-                    finish()
-                    true
-                }
-                id.nav_profile -> {
-                    val intent = Intent(this, Home::class.java)
-                    startActivity(intent)
-                    finish()
-                    true
-                }
-                else -> false
-            }
-        }
+
     }
 }

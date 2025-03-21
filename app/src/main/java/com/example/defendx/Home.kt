@@ -12,6 +12,7 @@ class Home : AppCompatActivity() {
 
         // Reference the BottomNavigationView
         val bottomNavigationView = findViewById<com.google.android.material.bottomnavigation.BottomNavigationView>(R.id.bottomNavigationView)
+
         val buyButton1 = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.buyButton1)
         // Set the selected item to "Home"
         bottomNavigationView.selectedItemId = R.id.nav_home

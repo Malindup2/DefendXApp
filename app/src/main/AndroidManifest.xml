@@ -55,6 +55,7 @@
 
         <activity android:name=".Product" />
 
+        <activity android:name=".Checkout"/>
         <!-- Main Activity (Next Screen) -->
         <activity
             android:name=".MainActivity"

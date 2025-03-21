@@ -82,14 +82,7 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- Product Image -->
-            <ImageView
-                android:id="@+id/productImage"
-                android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/pic2"
-                android:contentDescription="Product Image" />
+
 
             <!-- Product Name -->
             <TextView
@@ -103,41 +96,24 @@
                 android:layout_marginTop="16dp" />
 
             <!-- Product Price -->
+
+
+            <!-- Select Color Section -->
             <TextView
                 android:id="@+id/productPrice"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="LKR 3200.00"
-                android:textSize="18sp"
+                android:layout_marginTop="8dp"
+                android:text="LKR 6400.00"
+                android:textStyle="bold"
                 android:textColor="@color/black"
-                android:layout_marginTop="8dp" />
+                android:textSize="18sp" />
 
-            <!-- Product Description -->
-            <TextView
-                android:id="@+id/productDescription"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="The limited Edition of Defendx available from 20th of March. Grab your piece now! Fully cotton 350GSM fabric printed Relax Tee."
-                android:textSize="16sp"
-                android:textColor="@color/black"
-                android:layout_marginTop="16dp" />
-
-            <!-- Product Rating -->
-            <TextView
-                android:id="@+id/productRating"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="⭐⭐⭐⭐⭐"
-                android:textSize="16sp"
-                android:textColor="@color/black"
-                android:layout_marginTop="16dp" />
-
-            <!-- Select Color Section -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="160dp"
                 android:orientation="horizontal"
-                android:background="@drawable/graybtn"
+
                 android:layout_marginTop="16dp">
 
                 <TextView
@@ -145,43 +121,28 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Select color"
+                    android:text="LKR3200 X 2"
                     android:layout_marginLeft="8dp"
                     android:textSize="20sp"
-                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
                     android:textColor="@color/black" />
 
-                <RadioButton
-                    android:id="@+id/radioButtonBlack"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
                     android:layout_weight="1"
-                    android:text="White"
-                    android:textColor="#040404" />
+                    app:srcCompat="@drawable/pic2" />
 
-                <RadioButton
-                    android:id="@+id/radioButtonWhite"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="black"
-                    android:textColor="#040404"/>
 
-                <RadioButton
-                    android:id="@+id/radioButtonBlue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Blue"
-                    android:textColor="#040404"/>
             </LinearLayout>
 
             <!-- Select Size Section -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="70dp"
                 android:orientation="horizontal"
-                android:background="@drawable/graybtn"
+                android:background="@drawable/purchasebtn"
                 android:layout_marginTop="16dp">
 
                 <TextView
@@ -189,30 +150,33 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Select size"
-                    android:layout_marginLeft="8dp"
+                    android:text="Shipping Address"
+                    android:layout_margin="10dp"
+                    android:layout_marginLeft="25dp"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:textColor="@color/black" />
 
-                <Spinner
-                    android:id="@+id/sizeSpinner"
+                <EditText
+                    android:id="@+id/editTextText"
                     android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:entries="@array/sizes_array"
-                    android:prompt="@string/select_size_prompt" />
+                    android:layout_marginTop="15dp"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="address" />
+
 
             </LinearLayout>
 
             <!-- Quantity Section -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="70dp"
                 android:orientation="horizontal"
                 android:gravity="center_vertical"
-                android:background="@drawable/graybtn"
+                android:background="@drawable/purchasebtn"
                 android:layout_marginTop="16dp">
 
                 <TextView
@@ -220,54 +184,151 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Quantity"
+                    android:text="Method"
                     android:layout_marginLeft="8dp"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:textColor="@color/black" />
 
-                <Button
-                    android:id="@+id/decreaseButton"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:text="-"
-                    android:textSize="18sp"
-                    android:textColor="@color/black"
-                    android:background="?attr/selectableItemBackgroundBorderless" />
-
-                <TextView
-                    android:id="@+id/quantityValue"
-                    android:layout_width="40dp"
+                <RadioButton
+                    android:id="@+id/normal"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="0"
-                    android:textSize="18sp"
-                    android:textColor="@color/black"
-                    android:gravity="center"
-                    android:layout_marginHorizontal="8dp" />
+                    android:layout_weight="1"
+                    android:text="Normal"
+                    android:textColor="#040404" />
 
-                <Button
-                    android:id="@+id/increaseButton"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:text="+"
-                    android:textSize="18sp"
-                    android:textColor="@color/black"
-                    android:background="?attr/selectableItemBackgroundBorderless" />
+                <RadioButton
+                    android:id="@+id/economy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Economy"
+                    android:textColor="#040404" />
+
+                <RadioButton
+                    android:id="@+id/fast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fast"
+                    android:textColor="#040404" />
+
             </LinearLayout>
 
-            <!-- Buy Button -->
+
+            <!-- Pricing Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/purchasebtn"
+                android:layout_marginTop="16dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Item Cost"
+                        android:textSize="16sp"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/itemCost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LKR 3200.00"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Shipping Charge -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Shipping Charge"
+                        android:textSize="16sp"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/shippingCharge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LKR 200.00"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Divider -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey"
+                    android:layout_marginTop="8dp" />
+
+                <!-- Total -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Total"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/totalAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LKR 3400.00"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+            <!--  Button -->
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/productBuy"
+                android:id="@+id/BuyButton"
                 android:layout_width="130dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="40dp"
                 android:background="@drawable/blackbtn"
                 android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
                 android:gravity="center"
                 android:minWidth="160dp"
                 android:minHeight="48dp"
                 android:padding="8dp"
-                android:text="Buy"
+                android:text="Pay"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold" />

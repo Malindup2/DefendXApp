@@ -185,5 +185,5 @@
         android:layout_height="wrap_content"
         android:background="@drawable/blackbtn"
         app:menu="@menu/bottom_navigation_bar"
-        android:layout_margin===="20dp"/>
+        android:layout_margin="20dp"/>
 </LinearLayout>

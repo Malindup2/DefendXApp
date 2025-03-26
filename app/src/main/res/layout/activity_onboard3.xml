@@ -24,7 +24,7 @@
         android:fontFamily="sans-serif-medium"
         android:gravity="center"
         android:paddingHorizontal="10dp"
-        android:text=" SHOP YOUR"
+        android:text="@string/shop"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold" />
@@ -38,7 +38,7 @@
         android:fontFamily="sans-serif-medium"
         android:gravity="center"
         android:paddingHorizontal="16dp"
-        android:text="MILITARY GRADES"
+        android:text="@string/mili"
         android:textColor="@color/grey"
         android:textSize="24sp"
         android:textStyle="bold" />
@@ -51,7 +51,7 @@
         android:gravity="center"
         android:paddingHorizontal="16dp"
         android:paddingBottom="20dp"
-        android:text="Now!"
+        android:text="@string/now"
         android:textColor="#3C3B3B"
         android:textSize="16sp" />
 

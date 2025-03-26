@@ -11,7 +11,7 @@ class OnboardingActivityOne : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_onboard1)
 
-        // Next arrow click listener
+
         val nextArrow = findViewById<ImageView>(R.id.next_arrow)
         nextArrow.setOnClickListener {
             val intent = Intent(this, OnboardingActivityTwo::class.java) // Go to MainActivity

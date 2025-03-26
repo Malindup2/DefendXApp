@@ -165,7 +165,7 @@
                     android:layout_marginTop="15dp"
                     android:ems="10"
                     android:inputType="text"
-                    android:text="address" />
+                    android:hint="shipping address" />
 
 
             </LinearLayout>

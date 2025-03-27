@@ -12,7 +12,7 @@ class Checkout : AppCompatActivity() {
         setContentView(layout.activity_checkout)
 
         // Reference the Buy Button
-        val finality  = findViewById<androidx.appcompat.widget.AppCompatButton>(id.PayBtnLast)
+        val finality = findViewById<androidx.appcompat.widget.AppCompatButton>(id.PayBtnLast)
         finality.setOnClickListener {
             val intent = Intent(this, Payment::class.java)
             startActivity(intent)

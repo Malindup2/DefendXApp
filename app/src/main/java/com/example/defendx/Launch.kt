@@ -1,4 +1,5 @@
 package com.example.defendx
+
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
@@ -12,7 +13,7 @@ class LaunchActivity : AppCompatActivity() {
 
         // Delay for 2 seconds
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this,OnboardingActivityOne::class.java)
+            val intent = Intent(this, OnboardingActivityOne::class.java)
             startActivity(intent)
             finish()
         }, 3000)

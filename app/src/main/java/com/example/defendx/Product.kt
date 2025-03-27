@@ -34,6 +34,7 @@ class Product : AppCompatActivity() {
                     finish()
                     true
                 }
+
                 R.id.nav_wishlist -> {
                     // Navigate to Wishlist activity
                     val intent = Intent(this, Wishlist::class.java)
@@ -41,6 +42,7 @@ class Product : AppCompatActivity() {
                     finish()
                     true
                 }
+
                 R.id.buyButton1 -> {
                     // Navigate to Orders activity
                     val intent = Intent(this, Product::class.java)
@@ -48,6 +50,7 @@ class Product : AppCompatActivity() {
                     finish()
                     true
                 }
+
                 R.id.nav_profile -> {
                     // Navigate to Profile activity
                     val intent = Intent(this, Product::class.java)
@@ -55,6 +58,7 @@ class Product : AppCompatActivity() {
                     finish()
                     true
                 }
+
                 else -> false
             }
         }

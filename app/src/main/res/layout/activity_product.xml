@@ -6,7 +6,6 @@
     android:orientation="vertical"
     android:background="@color/white"
     android:padding="16dp">
-
     <!-- Top Fixed Header -->
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,7 +14,6 @@
         android:gravity="center_vertical"
         android:padding="8dp"
         android:background="@color/white">
-
         <!-- Back Button -->
         <ImageView
             android:id="@+id/backButton"
@@ -28,7 +26,6 @@
             android:background="?attr/selectableItemBackgroundBorderless"
             android:padding="8dp"
             android:layout_marginEnd="16dp" />
-
         <!-- Search Bar -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/searchInputLayout"
@@ -43,7 +40,6 @@
             app:boxCornerRadiusBottomEnd="20dp"
             app:hintTextColor="@color/grey"
             app:boxBackgroundMode="outline">
-
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/searchEditText"
                 android:layout_width="match_parent"
@@ -54,7 +50,6 @@
                 android:inputType="text"
                 android:drawablePadding="8dp" />
         </com.google.android.material.textfield.TextInputLayout>
-
         <!-- Bell Icon -->
         <ImageView
             android:id="@+id/bellIcon"
@@ -68,20 +63,17 @@
             android:background="?attr/selectableItemBackgroundBorderless"
             android:padding="8dp" />
     </LinearLayout>
-
     <!-- ScrollView for Middle Content -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:fillViewport="true">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp">
-
             <!-- Product Image -->
             <ImageView
                 android:id="@+id/productImage"
@@ -90,8 +82,6 @@
                 android:scaleType="centerCrop"
                 android:src="@drawable/pic2"
                 android:contentDescription="Product Image" />
-
-            <!-- Product Name -->
             <TextView
                 android:id="@+id/productName"
                 android:layout_width="match_parent"
@@ -101,28 +91,26 @@
                 android:textStyle="bold"
                 android:textColor="@color/black"
                 android:layout_marginTop="16dp" />
-
             <!-- Product Price -->
             <TextView
                 android:id="@+id/productPrice"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text=""
+                android:text="LKR 3200.00"
+                android:background="@drawable/graybtn"
                 android:textSize="18sp"
                 android:textColor="@color/black"
                 android:layout_marginTop="8dp" />
-
-            <!-- Product Description -->
             <TextView
                 android:id="@+id/productDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/des"
                 android:textSize="16sp"
+                android:padding="5dp"
+                android:background="@drawable/purchasebtn"
                 android:textColor="@color/black"
                 android:layout_marginTop="16dp" />
-
-            <!-- Product Rating -->
             <TextView
                 android:id="@+id/productRating"
                 android:layout_width="match_parent"
@@ -131,7 +119,6 @@
                 android:textSize="16sp"
                 android:textColor="@color/black"
                 android:layout_marginTop="16dp" />
-
             <!-- Select Color Section -->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -139,7 +126,6 @@
                 android:orientation="horizontal"
                 android:background="@drawable/graybtn"
                 android:layout_marginTop="16dp">
-
                 <TextView
                     android:id="@+id/selectColorText"
                     android:layout_width="wrap_content"
@@ -150,40 +136,40 @@
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:textColor="@color/black" />
-
                 <RadioButton
                     android:id="@+id/radioButtonBlack"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="White"
-                    android:textColor="#040404" />
-
+                    android:text="Black"
+                    android:textColor="#000000"
+                    android:buttonTint="@color/black"
+                    android:textSize="16sp" />
                 <RadioButton
                     android:id="@+id/radioButtonWhite"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="black"
-                    android:textColor="#040404"/>
-
+                    android:text="White"
+                    android:textColor="#000000"
+                    android:buttonTint="@color/black"
+                    android:textSize="16sp"/>
                 <RadioButton
                     android:id="@+id/radioButtonBlue"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Blue"
-                    android:textColor="#040404"/>
+                    android:textColor="@color/black"
+                    android:buttonTint="@color/black"
+                    android:textSize="16sp"/>
             </LinearLayout>
-
-            <!-- Select Size Section -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:orientation="horizontal"
                 android:background="@drawable/graybtn"
                 android:layout_marginTop="16dp">
-
                 <TextView
                     android:id="@+id/selectSizeText"
                     android:layout_width="wrap_content"
@@ -194,7 +180,6 @@
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:textColor="@color/black" />
-
                 <Spinner
                     android:id="@+id/sizeSpinner"
                     android:layout_width="wrap_content"
@@ -203,12 +188,14 @@
                     android:layout_weight="1"
                     android:entries="@array/sizes_array"
                     android:prompt="@string/select_size_prompt"
-
-                    />
-
+                    android:popupBackground="@color/black"
+                    android:spinnerMode="dropdown"
+                    android:dropDownWidth="wrap_content"
+                    android:dropDownVerticalOffset="50dp"
+                    android:dropDownHorizontalOffset="0dp"
+                    android:background="@drawable/blackbtn"
+                    android:dropDownSelector="@color/white" />
             </LinearLayout>
-
-            <!-- Quantity Section -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -216,7 +203,6 @@
                 android:gravity="center_vertical"
                 android:background="@drawable/graybtn"
                 android:layout_marginTop="16dp">
-
                 <TextView
                     android:id="@+id/quantityText"
                     android:layout_width="wrap_content"
@@ -227,16 +213,15 @@
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:textColor="@color/black" />
-
                 <Button
                     android:id="@+id/decreaseButton"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:text="-"
                     android:textSize="18sp"
-                    android:textColor="@color/black"
-                    android:background="?attr/selectableItemBackgroundBorderless" />
-
+                    android:textColor="@color/white"
+                    android:background="@drawable/blackbtn"
+                     />
                 <TextView
                     android:id="@+id/quantityValue"
                     android:layout_width="40dp"
@@ -246,37 +231,34 @@
                     android:textColor="@color/black"
                     android:gravity="center"
                     android:layout_marginHorizontal="8dp" />
-
                 <Button
                     android:id="@+id/increaseButton"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:text="+"
                     android:textSize="18sp"
-                    android:textColor="@color/black"
-                    android:background="?attr/selectableItemBackgroundBorderless" />
+                    android:textColor="@color/white"
+                    android:background="@drawable/blackbtn"
+                     />
             </LinearLayout>
-
             <!-- Buy Button -->
-            <androidx.appcompat.widget.AppCompatButton
+            <Button
                 android:id="@+id/productBuy"
                 android:layout_width="130dp"
-                android:layout_height="40dp"
+                android:layout_height="50dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/blackbtn"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:minWidth="160dp"
-                android:minHeight="48dp"
-                android:padding="8dp"
+                android:minHeight="58dp"
+                android:paddingBottom="12dp"
                 android:text="Buy"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>
-
-    <!-- Bottom Navigation Bar -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"

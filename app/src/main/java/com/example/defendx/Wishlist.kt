@@ -26,6 +26,7 @@ class Wishlist : AppCompatActivity() {
                     finish()
                     true
                 }
+
                 else -> false
             }
         }

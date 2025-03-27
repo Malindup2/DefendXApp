@@ -13,7 +13,8 @@ class Home : AppCompatActivity() {
         setContentView(R.layout.activity_home)
 
 
-        val bottomNavigationView = findViewById<com.google.android.material.bottomnavigation.BottomNavigationView>(R.id.bottomNavigationView)
+        val bottomNavigationView =
+            findViewById<com.google.android.material.bottomnavigation.BottomNavigationView>(R.id.bottomNavigationView)
 
         val buyButton1 = findViewById<Button>(R.id.buyButton1)
         // Set the selected item to "Home"
@@ -23,7 +24,6 @@ class Home : AppCompatActivity() {
             val intent = Intent(this, Product::class.java)
             startActivity(intent)
         }
-
 
 
         // Set up navigation listener
@@ -38,21 +38,22 @@ class Home : AppCompatActivity() {
                 }
 
                 R.id.buyButton1 -> {
-                    // Navigate to Wishlist activity
+
                     val intent = Intent(this, Product::class.java)
                     startActivity(intent)
                     finish()
                     true
                 }
 
-                R.id.nav_profile ->{
+                R.id.nav_profile -> {
 
-                    val intent = Intent( this,Profile::class. java)
+                    val intent = Intent(this, Profile::class.java)
                     startActivity(intent)
                     finish()
                     true
 
                 }
+
                 else -> false
             }
         }

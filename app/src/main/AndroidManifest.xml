@@ -73,9 +73,6 @@
         <activity android:name=".Profile"
             android:exported="false"/>
 
-
-
-
         <activity
             android:name=".MainActivity"
             android:exported="false" />

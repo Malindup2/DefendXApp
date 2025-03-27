@@ -16,30 +16,34 @@
         android:gravity="center_vertical"
         android:paddingBottom="16dp">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/searchInputLayout"
+
+        <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DefendX"
+        android:textSize="16sp"
+        android:textStyle="bold"
+            android:layout_margin="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+        <EditText
+            android:id="@+id/searchEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:boxStrokeWidth="1dp"
-            app:boxStrokeColor="@color/black"
-            app:boxCornerRadiusTopStart="20dp"
-            app:boxCornerRadiusTopEnd="20dp"
-            app:boxCornerRadiusBottomStart="20dp"
-            app:boxCornerRadiusBottomEnd="20dp"
-            app:hintTextColor="@color/grey"
-            app:boxBackgroundMode="outline">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/searchEditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Search"
-                android:textColor="@color/black"
-                android:drawableStart="@drawable/search"
-                android:inputType="text"
-                android:drawablePadding="8dp" />
-        </com.google.android.material.textfield.TextInputLayout>
+            android:hint="Search"
+            android:textColor="@color/black"
+            android:background="@drawable/outline"
+            android:drawableStart="@drawable/search"
+            android:drawablePadding="8dp"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp" />
 
         <ImageView
             android:id="@+id/bellIcon"
@@ -50,10 +54,10 @@
             android:contentDescription="Notifications" />
     </LinearLayout>
 
-    <!-- ScrollView for Banner, Categories, and Trending Items -->
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
         android:layout_weight="1">
 
         <LinearLayout
@@ -77,7 +81,7 @@
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:layout_marginTop="10dp"
                 android:textStyle="bold"
                 android:gravity="center"
@@ -219,17 +223,17 @@
 
             <!-- Trending Title -->
             <TextView
-                android:id="@+id/Trending"
+                android:id="@+id/Trendingitems"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:layout_marginTop="10dp"
                 android:textStyle="bold"
                 android:gravity="center"
                 android:text="Trending"
                 android:textColor="@color/black" />
 
-            <!-- Trending Items GridLayout -->
+            <!--  Items GridLayout -->
             <androidx.gridlayout.widget.GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -252,7 +256,7 @@
                     app:layout_rowWeight="1">
 
                     <ImageView
-                        android:id="@+id/imageView6"
+                        android:id="@+id/imageView1"
                         android:layout_width="160dp"
                         android:layout_height="120dp"
                         android:scaleType="centerCrop"
@@ -260,7 +264,7 @@
                         android:contentDescription="Item Image" />
 
                     <TextView
-                        android:id="@+id/textView8"
+                        android:id="@+id/imgdes1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Oversized T"
@@ -270,7 +274,7 @@
                         android:layout_marginTop="8dp" />
 
                     <TextView
-                        android:id="@+id/textView9"
+                        android:id="@+id/productprice1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
@@ -278,20 +282,13 @@
                         android:textColor="@color/grey"
                         android:textSize="14sp" />
 
-                    <androidx.appcompat.widget.AppCompatButton
+                    <Button
                         android:id="@+id/buyButton1"
-                        android:layout_width="80dp"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="6dp"
-                        android:background="@drawable/blackbtn"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:gravity="center"
-                        android:padding="8dp"
-                        android:text="Buy"
-                        android:textColor="@color/white"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
+                        android:layout_width="126dp"
+                        android:layout_height="wrap_content"
+                        android:text="Buy Now"
+                        android:backgroundTint="@color/black"
+                        />
 
                 </LinearLayout>
 
@@ -326,7 +323,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/textView1571"
+                        android:id="@+id/productprice2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
@@ -334,20 +331,16 @@
                         android:textColor="@color/grey"
                         android:textSize="14sp" />
 
-                    <androidx.appcompat.widget.AppCompatButton
+
+                    <Button
                         android:id="@+id/buyButton2"
-                        android:layout_width="80dp"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="6dp"
-                        android:background="@drawable/blackbtn"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:gravity="center"
-                        android:padding="8dp"
-                        android:text="Buy"
-                        android:textColor="@color/white"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
+                        android:layout_width="126dp"
+                        android:layout_height="wrap_content"
+                        android:text="Buy Now"
+                        android:backgroundTint="@color/black"
+                        />
+
+
                 </LinearLayout>
             </androidx.gridlayout.widget.GridLayout>
 
@@ -404,20 +397,13 @@
                         android:textColor="@color/grey"
                         android:textSize="14sp" />
 
-                    <androidx.appcompat.widget.AppCompatButton
+                    <Button
                         android:id="@+id/buyButton3"
-                        android:layout_width="80dp"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="6dp"
-                        android:background="@drawable/blackbtn"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:gravity="center"
-                        android:padding="8dp"
-                        android:text="Buy"
-                        android:textColor="@color/white"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
+                        android:layout_width="126dp"
+                        android:layout_height="wrap_content"
+                        android:text="Buy Now"
+                        android:backgroundTint="@color/black"
+                        />
 
                 </LinearLayout>
 
@@ -434,7 +420,7 @@
                     app:layout_rowWeight="1">
 
                     <ImageView
-                        android:id="@+id/imageView7"
+                        android:id="@+id/imageView12"
                         android:layout_width="160dp"
                         android:layout_height="120dp"
                         android:scaleType="centerCrop"
@@ -442,7 +428,7 @@
                         android:contentDescription="Item Image" />
 
                     <TextView
-                        android:id="@+id/textView10"
+                        android:id="@+id/textView15"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -452,7 +438,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/textView11"
+                        android:id="@+id/textView112"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
@@ -460,20 +446,13 @@
                         android:textColor="@color/grey"
                         android:textSize="14sp" />
 
-                    <androidx.appcompat.widget.AppCompatButton
+                    <Button
                         android:id="@+id/buyButton4"
-                        android:layout_width="80dp"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="6dp"
-                        android:background="@drawable/blackbtn"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:gravity="center"
-                        android:padding="8dp"
-                        android:text="Buy"
-                        android:textColor="@color/white"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
+                        android:layout_width="126dp"
+                        android:layout_height="wrap_content"
+                        android:text="Buy Now"
+                        android:backgroundTint="@color/black"
+                        />
                 </LinearLayout>
             </androidx.gridlayout.widget.GridLayout>
 
@@ -529,7 +508,7 @@
                         android:layout_marginTop="8dp" />
 
                     <TextView
-                        android:id="@+id/textView9"
+                        android:id="@+id/textView92"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
@@ -537,20 +516,13 @@
                         android:textColor="@color/grey"
                         android:textSize="14sp" />
 
-                    <androidx.appcompat.widget.AppCompatButton
+                    <Button
                         android:id="@+id/buyButton5"
-                        android:layout_width="80dp"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="6dp"
-                        android:background="@drawable/blackbtn"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:gravity="center"
-                        android:padding="8dp"
-                        android:text="Buy"
-                        android:textColor="@color/white"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
+                        android:layout_width="126dp"
+                        android:layout_height="wrap_content"
+                        android:text="Buy Now"
+                        android:backgroundTint="@color/black"
+                        />
 
                 </LinearLayout>
 
@@ -567,7 +539,7 @@
                     app:layout_rowWeight="1">
 
                     <ImageView
-                        android:id="@+id/imageView7"
+                        android:id="@+id/imageView27"
                         android:layout_width="160dp"
                         android:layout_height="120dp"
                         android:scaleType="centerCrop"
@@ -585,7 +557,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/textView11"
+                        android:id="@+id/textView14"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
@@ -593,20 +565,13 @@
                         android:textColor="@color/grey"
                         android:textSize="14sp" />
 
-                    <androidx.appcompat.widget.AppCompatButton
+                    <Button
                         android:id="@+id/buyButton6"
-                        android:layout_width="80dp"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="6dp"
-                        android:background="@drawable/blackbtn"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:gravity="center"
-                        android:padding="8dp"
-                        android:text="Buy"
-                        android:textColor="@color/white"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
+                        android:layout_width="126dp"
+                        android:layout_height="wrap_content"
+                        android:text="Buy Now"
+                        android:backgroundTint="@color/black"
+                        />
                 </LinearLayout>
             </androidx.gridlayout.widget.GridLayout>
 
@@ -662,20 +627,13 @@
                         android:textColor="@color/grey"
                         android:textSize="14sp" />
 
-                    <androidx.appcompat.widget.AppCompatButton
+                    <Button
                         android:id="@+id/buyButton7"
-                        android:layout_width="80dp"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="6dp"
-                        android:background="@drawable/blackbtn"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:gravity="center"
-                        android:padding="8dp"
-                        android:text="Buy"
-                        android:textColor="@color/white"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
+                        android:layout_width="126dp"
+                        android:layout_height="wrap_content"
+                        android:text="Buy Now"
+                        android:backgroundTint="@color/black"
+                        />
 
                 </LinearLayout>
 
@@ -700,7 +658,7 @@
                         android:contentDescription="Item Image" />
 
                     <TextView
-                        android:id="@+id/textView10"
+                        android:id="@+id/productdes8"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -718,20 +676,13 @@
                         android:textColor="@color/grey"
                         android:textSize="14sp" />
 
-                    <androidx.appcompat.widget.AppCompatButton
+                    <Button
                         android:id="@+id/buyButton8"
-                        android:layout_width="80dp"
-                        android:layout_height="40dp"
-                        android:layout_marginTop="6dp"
-                        android:background="@drawable/blackbtn"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:gravity="center"
-                        android:padding="8dp"
-                        android:text="Buy"
-                        android:textColor="@color/white"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
+                        android:layout_width="126dp"
+                        android:layout_height="wrap_content"
+                        android:text="Buy Now"
+                        android:backgroundTint="@color/black"
+                        />
                 </LinearLayout>
             </androidx.gridlayout.widget.GridLayout>
 

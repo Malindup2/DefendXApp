@@ -47,10 +47,9 @@
         android:layout_width="70dp"
         android:layout_height="63dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="70dp"
         android:background="#000000"
         android:src="@drawable/arrow"
-        android:tint="@color/white"
-        />
+        android:tint="@color/white" />
 
 </LinearLayout>

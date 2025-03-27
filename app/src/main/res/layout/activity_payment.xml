@@ -25,7 +25,7 @@
             android:layout_marginBottom="20dp"
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
-            android:text="Add payment details"
+            android:text="@string/abc"
             android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -47,28 +47,18 @@
             android:paddingRight="20dp"
             android:layout_marginTop="5dp">
 
-            <!-- Name Input -->
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/nameInputLayout"
+            <EditText
+                android:id="@+id/nameEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:boxStrokeWidth="1dp"
-                app:boxStrokeColor="@color/black"
-                app:boxCornerRadiusTopStart="20dp"
-                app:boxCornerRadiusTopEnd="20dp"
-                app:boxCornerRadiusBottomStart="20dp"
-                app:boxCornerRadiusBottomEnd="20dp"
-                app:hintTextColor="@color/grey"
-                app:boxBackgroundMode="outline">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/nameEditText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Name on card"
-                    android:textColor="@color/black"
-                    android:inputType="text" />
-            </com.google.android.material.textfield.TextInputLayout>
+                android:layout_marginTop="16dp"
+                android:hint="Name on card"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:background="@drawable/outline"
+                android:inputType="textCapWords"
+                android:padding="16dp"
+                 />
 
             <!-- Payment Method -->
             <LinearLayout
@@ -108,79 +98,46 @@
             </LinearLayout>
 
             <!-- Card Number -->
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/emailInputLayout"
+            <EditText
+                android:id="@+id/card_number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:boxStrokeWidth="1dp"
-                app:boxStrokeColor="@color/black"
-                app:boxCornerRadiusTopStart="20dp"
-                app:boxCornerRadiusTopEnd="20dp"
-                app:boxCornerRadiusBottomStart="20dp"
-                app:boxCornerRadiusBottomEnd="20dp"
-                app:hintTextColor="@color/grey"
-                app:boxBackgroundMode="outline">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/Email"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Card number"
-                    android:textColor="@color/black"
-                    android:inputType="textEmailAddress"
-                    android:textColorLink="#000000" />
-            </com.google.android.material.textfield.TextInputLayout>
+                android:hint="Enter card number"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:background="@drawable/outline"
+                android:inputType="number"
+                android:padding="16dp"
+                />
 
             <!-- CVV -->
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/passwordInputLayout"
+            <EditText
+                android:id="@+id/cvv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:boxStrokeWidth="1dp"
-                app:boxStrokeColor="@color/black"
-                app:boxCornerRadiusTopStart="20dp"
-                app:boxCornerRadiusTopEnd="20dp"
-                app:boxCornerRadiusBottomStart="20dp"
-                app:boxCornerRadiusBottomEnd="20dp"
-                app:hintTextColor="@color/grey"
-                app:boxBackgroundMode="outline">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/Password"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="CVV"
-                    android:textColor="@color/black"
-                    android:inputType="textPassword"
-                    android:textColorLink="#000000" />
-            </com.google.android.material.textfield.TextInputLayout>
+                android:hint="Enter cvv"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:background="@drawable/outline"
+                android:inputType="number"
+                android:padding="16dp"
+                />
 
             <!-- Expiry Date -->
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/dateInputLayout"
+            <EditText
+                android:id="@+id/date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:boxStrokeWidth="1dp"
-                app:boxStrokeColor="@color/black"
-                app:boxCornerRadiusTopStart="20dp"
-                app:boxCornerRadiusTopEnd="20dp"
-                app:boxCornerRadiusBottomStart="20dp"
-                app:boxCornerRadiusBottomEnd="20dp"
-                app:hintTextColor="@color/grey"
-                app:boxBackgroundMode="outline">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/date"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Date"
-                    android:inputType="textPassword"
-                    android:textColor="@color/black"
-                    android:textColorLink="#000000" />
-            </com.google.android.material.textfield.TextInputLayout>
+                android:hint=" Enter Date"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:background="@drawable/outline"
+                android:inputType="date"
+                android:padding="16dp"
+                />
 
             <!-- Agree to Pay -->
             <LinearLayout
@@ -207,19 +164,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="" />
+                     />
             </LinearLayout>
 
             <!-- Pay Button -->
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/PayBtnLast"
-                android:layout_width="match_parent"
+            <Button
+                android:id="@+id/payLKR"
+                android:layout_width="285dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:background="@drawable/blackbtn"
+                android:layout_margin="20dp"
+                android:layout_marginTop="60dp"
+                android:backgroundTint="@color/black"
+                android:gravity="center"
                 android:padding="16dp"
-                android:text="PAY LKR 3600.00"
-                android:textColor="@color/white"
+                android:text="Pay LKR 3600.00"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>

@@ -13,7 +13,7 @@
         android:theme="@style/Theme.DefendX"
         tools:targetApi="31">
 
-        <!-- Launch Activity (New Entry Point) -->
+
         <activity
             android:name=".LaunchActivity"
             android:exported="true"
@@ -47,26 +47,38 @@
             android:name=".Login"
             android:exported="false" />
 
-        <activity android:name=".Home"
-                    android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
 
-        <activity android:name=".Wishlist"
-                    android:exported="false" />
+        <activity
+            android:name=".Wishlist"
+            android:exported="false" />
 
-        <activity android:name=".Product" />
+        <activity
+            android:name=".Product"
+            android:exported="false"/>
 
-        <activity android:name=".Checkout"/>
+        <activity
+            android:name=".Checkout"
+            android:exported="false"/>
 
-        <activity android:name=".Payment"/>
+        <activity
+            android:name=".Payment"
+            android:exported="false"/>
 
-        <activity android:name=".Success"/>
+        <activity android:name=".Success"
+            android:exported="false"/>
+
+        <activity android:name=".Profile"
+            android:exported="false"/>
 
 
 
-        <!-- Main Activity (Next Screen) -->
+
         <activity
             android:name=".MainActivity"
-            android:exported="false" /> <!-- No intent-filter here, it’s not the entry point anymore -->
+            android:exported="false" />
 
     </application>
 

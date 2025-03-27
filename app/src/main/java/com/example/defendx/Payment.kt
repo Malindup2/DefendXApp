@@ -16,7 +16,7 @@ class Payment : AppCompatActivity() {
         setContentView(layout.activity_payment)
 
 
-        val Press = findViewById<androidx.appcompat.widget.AppCompatButton>(PayBtnLast)
+        val Press = findViewById<Button>(payLKR)
         Press.setOnClickListener {
             val intent = Intent(this, Success::class.java)
             startActivity(intent)

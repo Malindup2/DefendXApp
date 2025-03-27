@@ -10,7 +10,6 @@ class Success : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_success)
 
-        // Use a Handler to delay the finish() call by 3 seconds
         Handler(Looper.getMainLooper()).postDelayed({
             finish() // Close the activity after 3 seconds
         }, 3000)

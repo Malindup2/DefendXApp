@@ -2,7 +2,9 @@ package com.example.defendx
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.AppCompatButton
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class Home : AppCompatActivity() {
@@ -10,10 +12,10 @@ class Home : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        // Reference the BottomNavigationView
+
         val bottomNavigationView = findViewById<com.google.android.material.bottomnavigation.BottomNavigationView>(R.id.bottomNavigationView)
 
-        val buyButton1 = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.buyButton1)
+        val buyButton1 = findViewById<Button>(R.id.buyButton1)
         // Set the selected item to "Home"
         bottomNavigationView.selectedItemId = R.id.nav_home
 

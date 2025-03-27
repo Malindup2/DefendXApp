@@ -36,73 +36,46 @@
         android:orientation="vertical"
         android:paddingLeft="40dp"
         android:paddingRight="40dp"
-        android:layout_marginTop="5dp">
-
-
-
+        android:layout_marginTop="15dp">
 
         <!-- Email Field -->
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/emailInputLayout"
+        <EditText
+            android:id="@+id/username"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            app:boxStrokeWidth="1dp"
-            app:boxStrokeColor="@color/black"
-            app:boxCornerRadiusTopStart="20dp"
-            app:boxCornerRadiusTopEnd="20dp"
-            app:boxCornerRadiusBottomStart="20dp"
-            app:boxCornerRadiusBottomEnd="20dp"
-            app:hintTextColor="@color/grey"
-            app:boxBackgroundMode="outline">
+            android:layout_height="49dp"
+            android:background="@drawable/edittext"
+            android:ems="10"
+            android:inputType="text"
+            android:layout_marginTop="30dp"
+            android:hint="User Name"
+            android:paddingLeft="10dp"
+             />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/Email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Email"
-                android:textColor="@color/black"
-                android:inputType="textEmailAddress"
-                android:textColorLink="#000000" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/passwordInputLayout"
+        <EditText
+            android:id="@+id/password"
             android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@drawable/edittext"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:layout_marginTop="30dp"
+            android:hint="Password"
+            android:paddingLeft="10dp"
+             />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="285dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            app:boxStrokeWidth="1dp"
-            app:boxStrokeColor="@color/black"
-            app:boxCornerRadiusTopStart="20dp"
-            app:boxCornerRadiusTopEnd="20dp"
-            app:boxCornerRadiusBottomStart="20dp"
-            app:boxCornerRadiusBottomEnd="20dp"
-            app:hintTextColor="@color/grey"
-            app:boxBackgroundMode="outline">
+            android:layout_margin="20dp"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Login"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/Password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Password"
-                android:textColor="@color/black"
-                android:inputType="textPassword"
-                android:textColorLink="#000000" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/login"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:background="@drawable/blackbtn"
-                android:inputType="text"
-                android:padding="16dp"
-                android:text="@string/login"
-                android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-        </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 
 

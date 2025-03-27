@@ -16,21 +16,43 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- Title -->
-        <TextView
-            android:id="@+id/textView2"
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:fontFamily="sans-serif-medium"
-            android:gravity="center"
-            android:text="@string/abc"
-            android:textColor="@color/black"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:background="@color/white">
 
-        <!-- Image -->
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/back"
+                android:contentDescription="Back"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="8dp"
+                android:layout_marginEnd="16dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="254dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:text="@string/abc"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
         <ImageView
             android:id="@+id/onboarding_image"
             android:layout_width="match_parent"
@@ -38,7 +60,6 @@
             android:adjustViewBounds="true"
             android:src="@drawable/card" />
 
-        <!-- Payment Details -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -60,7 +81,6 @@
                 android:padding="16dp"
                  />
 
-            <!-- Payment Method -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
@@ -97,7 +117,6 @@
                     android:textColor="#040404" />
             </LinearLayout>
 
-            <!-- Card Number -->
             <EditText
                 android:id="@+id/card_number"
                 android:layout_width="match_parent"
@@ -111,7 +130,6 @@
                 android:padding="16dp"
                 />
 
-            <!-- CVV -->
             <EditText
                 android:id="@+id/cvv"
                 android:layout_width="match_parent"
@@ -125,7 +143,6 @@
                 android:padding="16dp"
                 />
 
-            <!-- Expiry Date -->
             <EditText
                 android:id="@+id/date"
                 android:layout_width="match_parent"
@@ -139,7 +156,6 @@
                 android:padding="16dp"
                 />
 
-            <!-- Agree to Pay -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
@@ -167,7 +183,6 @@
                      />
             </LinearLayout>
 
-            <!-- Pay Button -->
             <Button
                 android:id="@+id/payLKR"
                 android:layout_width="285dp"

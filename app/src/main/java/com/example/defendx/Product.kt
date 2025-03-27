@@ -3,6 +3,8 @@ package com.example.defendx
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -17,10 +19,17 @@ class Product : AppCompatActivity() {
         // Set the selected item to "Home"
         bottomNavigationView.selectedItemId = R.id.nav_home
 
-        val buyButton = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.productBuy)
+        val buyButton = findViewById<Button>(R.id.productBuy)
 
         buyButton.setOnClickListener {
             val intent = Intent(this, Checkout::class.java)
+            startActivity(intent)
+        }
+
+
+        val backbutton = findViewById<ImageView>(R.id.backButton)
+        backbutton.setOnClickListener {
+            val intent = Intent(this, Home::class.java)
             startActivity(intent)
         }
 

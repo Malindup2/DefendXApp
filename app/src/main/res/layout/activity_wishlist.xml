@@ -8,7 +8,6 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Search Bar and Bell Icon -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,7 +49,6 @@
             android:contentDescription="Notifications" />
     </LinearLayout>
 
-    <!-- ScrollView for Banner, Categories, and Trending Items -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -61,7 +59,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Banner Image -->
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="match_parent"
@@ -72,7 +69,6 @@
                 android:scaleType="centerCrop"
                 app:srcCompat="@drawable/wishbanner" />
 
-            <!-- Categories Title -->
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
@@ -85,7 +81,6 @@
                 android:text="Wish List"
                 android:textColor="@color/black" />
 
-            <!-- Categories GridLayout -->
             <GridLayout
                 android:id="@+id/categoriesGridLayout"
                 android:layout_width="match_parent"
@@ -96,7 +91,6 @@
                 android:alignmentMode="alignMargins"
                 android:useDefaultMargins="true">
 
-                <!-- Category 1: Shirt -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -126,7 +120,6 @@
                         android:layout_marginTop="4dp" />
                 </LinearLayout>
 
-                <!-- Category 2: Pants -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -156,7 +149,6 @@
                         android:layout_marginTop="4dp" />
                 </LinearLayout>
 
-                <!-- Category 3: Caps -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -186,7 +178,6 @@
                         android:layout_marginTop="4dp" />
                 </LinearLayout>
 
-                <!-- Category 4: Gym -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -217,7 +208,6 @@
                 </LinearLayout>
             </GridLayout>
 
-            <!-- Trending Title -->
             <TextView
                 android:id="@+id/restocked"
                 android:layout_width="match_parent"
@@ -229,7 +219,6 @@
                 android:background="@drawable/graybtn"
                 android:text="Restocked"/>
 
-            <!-- Trending Items GridLayout -->
             <androidx.gridlayout.widget.GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -239,7 +228,6 @@
                 app:rowCount="1"
                 app:useDefaultMargins="true">
 
-                <!-- Trending Item 1 -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -295,7 +283,6 @@
 
                 </LinearLayout>
 
-                <!-- Trending Item 2 -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -355,7 +342,6 @@
 
 
 
-            <!-- Trending Items GridLayout -->
             <androidx.gridlayout.widget.GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -365,7 +351,6 @@
                 app:rowCount="1"
                 app:useDefaultMargins="true">
 
-                <!-- Trending Item 3 -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -421,7 +406,6 @@
 
                 </LinearLayout>
 
-                <!-- Trending Item 2 -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -489,7 +473,6 @@
                 android:text="Latest"
                 android:textColor="@color/black" />
 
-            <!-- Trending Items GridLayout -->
             <androidx.gridlayout.widget.GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -499,7 +482,6 @@
                 app:rowCount="1"
                 app:useDefaultMargins="true">
 
-                <!-- Trending Item 3 -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -555,7 +537,6 @@
 
                 </LinearLayout>
 
-                <!-- Trending Item 2 -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -614,7 +595,6 @@
 
 
 
-            <!-- Trending Items GridLayout -->
             <androidx.gridlayout.widget.GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -624,7 +604,6 @@
                 app:rowCount="1"
                 app:useDefaultMargins="true">
 
-                <!-- Trending Item 3 -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -680,7 +659,6 @@
 
                 </LinearLayout>
 
-                <!-- Trending Item 2 -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -740,7 +718,6 @@
         </LinearLayout>
     </ScrollView>
 
-    <!-- Bottom Navigation Bar -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"

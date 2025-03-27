@@ -1,5 +1,6 @@
 package com.example.defendx
 
+import android.accounts.Account
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -22,6 +23,22 @@ class Wishlist : AppCompatActivity() {
                 R.id.nav_home -> {
                     // Navigate to Wishlist activity
                     val intent = Intent(this, Home::class.java)
+                    startActivity(intent)
+                    finish()
+                    true
+                }
+
+                R.id.nav_orders->{
+                    val intent = Intent(this, Checkout::class.java)
+                    startActivity(intent)
+                    finish()
+                    true
+
+                }
+
+                R.id.nav_profile->{
+
+                    val intent = Intent(this, Account::class.java)
                     startActivity(intent)
                     finish()
                     true

@@ -2,29 +2,20 @@ package com.example.defendx
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.AppCompatButton
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class Home : AppCompatActivity() {
+class Profile : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        setContentView(R.layout.activity_account)
 
-
+        // Reference the BottomNavigationView
         val bottomNavigationView =
             findViewById<com.google.android.material.bottomnavigation.BottomNavigationView>(R.id.bottomNavigationView)
 
-        val buyButton1 = findViewById<Button>(R.id.buyButton1)
         // Set the selected item to "Home"
-        bottomNavigationView.selectedItemId = R.id.nav_home
-
-        //navigate product
-        buyButton1.setOnClickListener {
-            val intent = Intent(this, Product::class.java)
-            startActivity(intent)
-        }
+        bottomNavigationView.selectedItemId = R.id.nav_profile
 
 
         // Set up navigation listener
@@ -38,22 +29,6 @@ class Home : AppCompatActivity() {
                     true
                 }
 
-                R.id.buyButton1 -> {
-
-                    val intent = Intent(this, Product::class.java)
-                    startActivity(intent)
-                    finish()
-                    true
-                }
-
-
-                R.id.nav_orders->{
-                    val intent = Intent(this, Checkout::class.java)
-                    startActivity(intent)
-                    finish()
-                    true
-                }
-
                 R.id.nav_profile -> {
 
                     val intent = Intent(this, Profile::class.java)
@@ -62,6 +37,24 @@ class Home : AppCompatActivity() {
                     true
 
                 }
+                R.id.nav_orders-> {
+                    val intent = Intent(this, Checkout::class.java)
+                    startActivity(intent)
+                    finish()
+                    true
+                }
+                R.id.nav_home -> {
+                    // Navigate to Wishlist activity
+                    val intent = Intent(this, Home::class.java)
+                    startActivity(intent)
+                    finish()
+                    true
+                }
+                R.id.nav_orders->{
+                    val intent = Intent(this, Checkout::class.java)
+                    startActivity(intent)
+                    finish()
+                    true}
 
                 else -> false
             }

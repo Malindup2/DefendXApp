@@ -15,7 +15,6 @@
         android:padding="8dp"
         android:background="@color/white">
 
-        <!-- Back Button -->
         <ImageView
             android:id="@+id/backButton"
             android:layout_width="48dp"
@@ -28,7 +27,6 @@
             android:padding="8dp"
             android:layout_marginEnd="16dp" />
 
-        <!-- Search Bar -->
         <EditText
             android:id="@+id/searchEditText"
             android:layout_width="0dp"
@@ -45,7 +43,7 @@
         android:paddingTop="12dp"
         android:paddingBottom="12dp" />
 
-        <!-- Bell Icon -->
+
         <ImageView
             android:id="@+id/bellIcon"
             android:layout_width="48dp"
@@ -59,7 +57,6 @@
             android:padding="8dp" />
     </LinearLayout>
 
-    <!-- ScrollView for Middle Content -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -85,7 +82,6 @@
                 android:textColor="@color/black"
                 android:layout_marginTop="16dp" />
 
-            <!-- Product Price -->
             <TextView
                 android:id="@+id/productPrice"
                 android:layout_width="match_parent"
@@ -123,7 +119,6 @@
 
             </LinearLayout>
 
-            <!-- Select Size Section -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
@@ -156,7 +151,6 @@
 
             </LinearLayout>
 
-            <!-- Quantity Section -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
@@ -206,7 +200,6 @@
             </LinearLayout>
 
 
-            <!-- Pricing Section -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -238,7 +231,6 @@
                         android:textStyle="bold" />
                 </LinearLayout>
 
-                <!-- Shipping Charge -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -264,14 +256,12 @@
                         android:textStyle="bold" />
                 </LinearLayout>
 
-                <!-- Divider -->
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="@color/grey"
                     android:layout_marginTop="8dp" />
 
-                <!-- Total -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -303,7 +293,6 @@
 
 
 
-            <!--  Button -->
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/PayBtnLast"
                 android:layout_width="130dp"
@@ -324,7 +313,6 @@
         </LinearLayout>
     </ScrollView>
 
-    <!-- Bottom Navigation Bar -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
